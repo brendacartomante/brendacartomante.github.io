@@ -437,9 +437,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .service-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
   
   .about-container {
     grid-template-columns: 1fr 2fr;

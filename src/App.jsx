@@ -5,6 +5,7 @@ import aboutImage from './assets/about-image.jpg';
 import service1Image from './assets/service1.jpg';
 import service2Image from './assets/service2.jpg';
 import service3Image from './assets/service3.jpg';
+import service4Image from './assets/service4.jpg'; // Added for the 4th service
 
 function App() {
   return (
@@ -40,50 +41,75 @@ function App() {
 
       <section className="services-section">
         <h2>Escolha o seu mergulho</h2>
-        <div className="service-container">
-          <div className="service-item">
-            <div className="service-image">
-              <img src={service1Image} alt="Leitura Panorama da Alma" />
+        <div className="service-container flex flex-col items-center gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-7xl">
+            <div className="service-item flex flex-col h-full">
+              <div className="service-image">
+                <img src={service1Image} alt="Leitura Resposta Única" />
+              </div>
+              <div className="flex-grow">
+                <h3>Leitura Resposta Única</h3>
+                <p>Uma única pergunta, uma orientação cristalina. Traga sua dúvida mais urgente e receba uma mensagem direta das cartas, sem rodeios, ajudando-o(a) a tomar a melhor decisão no momento exato em que precisa.</p>
+                <p><strong>Ideal para:</strong></p>
+                <p>Dúvidas pontuais e decisões rápidas que pedem clareza imediata.</p>
+              </div>
+              <div className="price-tag mt-auto">
+                <span className="price-value">R$ 37,00</span>
+              </div>
+              <a href="https://buy.stripe.com/6oUaEWfRG2Za1x6c2Gds400" target="_blank" rel="noopener noreferrer" className="service-button">COMPRAR AGORA</a>
             </div>
-            <h3>Leitura Panorama da Alma</h3>
-            <p>Uma análise geral e profunda do seu momento de vida. Abrimos sua frequência energética para entender o amor, carreira, finanças, família e receber os conselhos que o universo tem para você.</p>
-            <p><strong>Ideal para:</strong></p>
-            <p>Uma visão completa e clareza sobre todas as áreas da sua vida.</p>
-            <div className="price-tag">
-              <span className="price-value">R$ 117,00</span>
-              <span className="price-description">Pagamento único</span>
+
+            <div className="service-item flex flex-col h-full">
+              <div className="service-image">
+                <img src={service2Image} alt="Leitura Panorâmica da Alma" />
+              </div>
+              <div className="flex-grow">
+                <h3>Leitura Panorâmica da Alma</h3>
+                <p>Uma análise geral e profunda do seu momento de vida. Abrimos sua frequência energética para entender como amor, carreira, finanças, família e espiritualidade estão se manifestando e como você pode alinhar essas áreas com seus desejos mais profundos.</p>
+                <p><strong>Ideal para:</strong></p>
+                <p>Quem busca autoconhecimento profundo e uma visão clara de todas as áreas da vida.</p>
+              </div>
+              <div className="price-tag mt-auto">
+                <span className="price-value">R$ 67,00</span>
+              </div>
+              <a href="https://buy.stripe.com/9AQg0W6Jq6N6bZC9AEs401" target="_blank" rel="noopener noreferrer" className="service-button">COMPRAR AGORA</a>
             </div>
-            <a href="https://wa.me/5562981640195?text=Olá,%20gostaria%20de%20agendar%20uma%20Leitura%20Panorama%20da%20Alma" className="service-button">QUERO O PANORAMA DA ALMA</a>
-          </div>
-          <div className="service-item">
-            <div className="service-image">
-              <img src={service2Image} alt="Leitura Foco & Direção" />
+
+            <div className="service-item flex flex-col h-full">
+              <div className="service-image">
+                <img src={service3Image} alt="Leitura Foco & Direção" />
+              </div>
+              <div className="flex-grow">
+                <h3>Leitura Foco & Direção</h3>
+                <p>Para quando você precisa de respostas diretas. Você traz três perguntas objetivas e, em nossa conversa, mergulhamos em cada uma delas, trazendo luz e o melhor direcionamento para suas decisões.</p>
+                <p><strong>Ideal para:</strong></p>
+                <p>Questões pontuais e tomadas de decisão importantes.</p>
+              </div>
+              <div className="price-tag mt-auto">
+                <span className="price-value">R$ 47,00</span>
+              </div>
+              <a href="https://buy.stripe.com/dRm9AS34U8jufnW2s6ds402" target="_blank" rel="noopener noreferrer" className="service-button">COMPRAR AGORA</a>
             </div>
-            <h3>Leitura Foco & Direção</h3>
-            <p>Para quando você precisa de respostas diretas. Você traz três perguntas objetivas e, em nossa conversa, mergulhamos em cada uma delas, trazendo luz e o melhor direcionamento para suas decisões.</p>
-            <p><strong>Ideal para:</strong></p>
-            <p>Questões pontuais e tomadas de decisão importantes.</p>
-            <div className="price-tag">
-              <span className="price-value">R$ 47,00</span>
-              <span className="price-description">Pagamento único</span>
+
+            <div className="service-item flex flex-col h-full p-4 rounded-lg shadow-lg border-4 border-yellow-500 relative">
+              <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold py-1 px-3 rounded-bl-lg">MELHOR OPÇÃO</div>
+              <div className="service-image"> 
+                <img src={service4Image} alt="Assinatura Mensal" />
+              </div>
+              <div className="flex-grow"> 
+                <h3>Assinatura Mensal</h3>
+                <h4>Sua Bússola Mensal com Brenda</h4>
+                <p className="mb-1">Seu acompanhamento contínuo de autoconhecimento.</p>
+                <p className="mb-1">Inclui uma análise completa para o seu mês e, a cada segunda-feira, um conselho da semana direcionado exclusivamente para você, via áudio no WhatsApp.</p>
+                <p className="mb-3">Um total de 5 leituras para te manter alinhada e potente.</p>
+                <p className="font-semibold"><strong>Ideal para:</strong></p>
+                <p>Quem deseja fazer do autoconhecimento um hábito e ter apoio constante em sua jornada.</p>
+              </div>
+              <div className="price-tag mt-auto"> 
+                <span className="price-value">R$ 97,00</span>
+              </div>
+              <a href="https://buy.stripe.com/5kQ6oG0WMfLWfnW4Aeds403" target="_blank" rel="noopener noreferrer" className="service-button bg-yellow-500 hover:bg-yellow-600 text-white w-full py-3">ASSINAR AGORA</a>
             </div>
-            <a href="https://wa.me/5562981640195?text=Olá,%20gostaria%20de%20agendar%20uma%20Leitura%20Foco%20e%20Direção" className="service-button">QUERO FOCO & DIREÇÃO</a>
-          </div>
-          <div className="service-item">
-            <div className="service-image">
-              <img src={service3Image} alt="Bússola Mensal" />
-            </div>
-            <h3>A JORNADA MAIS COMPLETA</h3>
-            <h4>Sua Bússola Mensal com Brenda</h4>
-            <p>(Assinatura)</p>
-            <p>Seu acompanhamento contínuo de autoconhecimento. Inclui uma análise completa para o seu mês e, a cada segunda-feira, um conselho da semana direcionado exclusivamente para você, via áudio no WhatsApp. Um total de 5 leituras para te manter alinhada e potente.</p>
-            <p><strong>Ideal para:</strong></p>
-            <p>Quem deseja fazer do autoconhecimento um hábito e ter apoio constante em sua jornada.</p>
-            <div className="price-tag">
-              <span className="price-value">Assinatura Mensal</span>
-              <span className="price-description">Consulte valores via WhatsApp</span>
-            </div>
-            <a href="https://wa.me/5562981640195?text=Olá,%20gostaria%20de%20assinar%20a%20Bússola%20Mensal" className="service-button">QUERO MINHA BÚSSOLA MENSAL</a>
           </div>
         </div>
       </section>
