@@ -6,6 +6,18 @@ import service1Image from './assets/service1.jpg';
 import service2Image from './assets/service2.jpg';
 import service3Image from './assets/service3.jpg';
 import service4Image from './assets/service4.jpg'; // Added for the 4th service
+import testimonial1 from './assets/testimonial1.jpeg';
+import testimonial2 from './assets/testimonial2.jpeg';
+import testimonial3 from './assets/testimonial3.jpeg';
+import testimonial4 from './assets/testimonial4.jpeg';
+import testimonial5 from './assets/testimonial5.jpeg';
+import testimonial6 from './assets/testimonial6.jpeg';
+import testimonial7 from './assets/testimonial7.jpeg';
+import testimonial8 from './assets/testimonial8.jpeg';
+import testimonial9 from './assets/testimonial9.jpeg';
+import testimonial10 from './assets/testimonial10.jpeg';
+import testimonial11 from './assets/testimonial11.jpeg';
+import testimonial12 from './assets/testimonial12.jpeg';
 
 function App() {
   return (
@@ -25,16 +37,22 @@ function App() {
         <h2>O que dizem as almas que conversaram comigo:</h2>
         <div className="testimonial-container">
           <div className="testimonial-item">
-            <p>"A conversa com a Brenda foi o abraço que minha alma precisava. Saí não apenas com respostas, mas com uma sensação de paz e um reencontro com a minha própria força."</p>
-            <p>M.F., Empresária</p>
+            <img src={testimonial1} alt="Depoimento de cliente satisfeita" />
           </div>
           <div className="testimonial-item">
-            <p>"Eu estava paralisada por uma decisão. A Brenda, com sua sensibilidade e as cartas, me mostrou uma perspectiva que eu não conseguia ver. Foi libertador."</p>
-            <p>J.A., Advogada</p>
+            <img src={testimonial2} alt="Depoimento de cliente satisfeita" />
           </div>
           <div className="testimonial-item">
-            <p>"A assinatura mensal é meu ritual de autocuidado. Ter o conselho da Brenda toda semana me mantém centrada e conectada com meu propósito."</p>
-            <p>C.L., Terapeuta</p>
+            <img src={testimonial3} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial4} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial5} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial6} alt="Depoimento de cliente satisfeita" />
           </div>
         </div>
       </section>
@@ -110,6 +128,30 @@ function App() {
               </div>
               <a href="https://buy.stripe.com/5kQ6oG0WMfLWfnW4Aeds403" target="_blank" rel="noopener noreferrer" className="service-button bg-yellow-500 hover:bg-yellow-600 text-white w-full py-3">ASSINAR AGORA</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="testimonials-section testimonials-section-2">
+        <h2>Mais depoimentos de quem transformou sua vida:</h2>
+        <div className="testimonial-container testimonial-container-2">
+          <div className="testimonial-item">
+            <img src={testimonial7} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial8} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial9} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial10} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial11} alt="Depoimento de cliente satisfeita" />
+          </div>
+          <div className="testimonial-item">
+            <img src={testimonial12} alt="Depoimento de cliente satisfeita" />
           </div>
         </div>
       </section>
